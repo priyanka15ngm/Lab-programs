@@ -1,0 +1,14 @@
+import java.util.*;
+class  Test1
+{
+	public static void main(String args[])
+	{
+		int i,j,k=0;
+		for(i=0;i<10;i++)
+		{
+			j=Integer.parseInt(args[i]);
+			k=k+j;
+		}
+	System.out.println("sum" +k);
+	}
+}
