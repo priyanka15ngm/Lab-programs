@@ -1,0 +1,48 @@
+/*question: Create a class Bbox that uses a parametreized constructor to initialaize the dimensions of a Bbox taken from a user .
+The dimension of the Bbox are width,height,depth.The class should have a method that can return the volume of the Bbox .Create
+ an object of the Bbox class and test the functionalities*/
+
+import java.util.Scanner;
+class Bbox
+{
+	int w;
+	int h;
+	int d;
+	Bbox(int width,int height,int depth)
+	{	
+		w=width;
+		h=height;
+		d=depth;
+	}
+	
+	 int Volume()
+	{
+
+	return(w*h*d);
+	
+	}
+
+
+	public static void main(String args[])
+	{
+	 Scanner obj=new Scanner(System.in);
+	
+	  System.out.println("Enter the width");
+	  int var1=obj.nextInt();
+	
+	  System.out.println("Enter the height");
+	  int var2=obj.nextInt();
+	
+	 System.out.println("Enter the depth");
+	  int var3=obj.nextInt();
+
+	 Bbox vol=new Bbox(var1,var2,var3);
+
+                    
+	  int ans=vol.Volume();
+	 System.out.println("the volume is "+ans);
+	 }
+  }
+
+	
+		
